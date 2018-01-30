@@ -2,30 +2,28 @@
 //complete the program below. 
 
 #include <iostream>
+#include <string>
 
-int main()
-{
-
-	string myName="Mike";//write your name there.
+int main() {
+	string myName="Hafiz";//write your name there.
 	//make a while loop until user input 'quit' to exit/end the program
-
-	(true)
-	{
-		
+	while(true) {
 		string userName;
 		//get the user input for string.
-		if(userName=="Abu")
-	       	{
-			cout<<"Hey Abu!"<<endl;
+		cout << "Input: ";
+		getline(cin, userName);
+		
+		if(strcmp(userName, "Abu") != 0) {
+			cout<<endl<<"Hey Abu!"<<endl;
 		}
-		else if(userName=="quit")
-		{
+		
+		else if(strcmp(userName, "quit") != 0) {
 			cout<<endl;
 			break;
 		}
-		else
-		{
-			cout<<"Aha! its "<<myName<<endl;
+		
+		else {
+			cout<<endl<<"Aha! its "<<myName<<endl;
 		}
 	}
 	return 0;
