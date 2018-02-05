@@ -19,7 +19,7 @@ int main() {
 		}
 		
 		else if(strcmp(userName, "quit") != 0) {
-			cout<<endl;
+			cout<< endl << "Press any key to exit";
 			break;
 		}
 		
