@@ -5,16 +5,17 @@
 #include <string>
 
 int main() {
-	string myName="Hafiz";//write your name there.
+	string myName ="Hafiz";//write your name there.
+	string userName;
+	
 	//make a while loop until user input 'quit' to exit/end the program
 	while(true) {
-		string userName;
 		//get the user input for string.
 		cout << "Input: ";
 		getline(cin, userName);
 		
-		if(strcmp(userName, "Abu") != 0) {
-			cout<<endl<<"Hey Abu!"<<endl;
+		if(strcmp(userName, myName) != 0) {
+			cout<<endl<<"Hey" << myName << "!"<<endl;
 		}
 		
 		else if(strcmp(userName, "quit") != 0) {
